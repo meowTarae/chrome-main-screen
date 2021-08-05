@@ -1,17 +1,20 @@
-                            
-const switch = document.querySelector(".switch");
-let switchNumber = 0;
+const ifBtnClick = document.querySelector(".btn");
+let btnOnOff = 0;
 
-switch.addEventListener("click", ifClick);
+ifBtnClick.addEventListener("click", ifClick);
 
 function ifClick() {
-  if (switchNumber === 0) {
-    switch.classList.add("rightMove");
-    switch.classList.remove("leftMove");
-    return switchNumber++;
-  } else if (switchNumber === 1) {
-    switch.classList.toggle("rightMove");
-    switch.classList.toggle("leftMove");
-    return --switchNumber;
+  if (btnOnOff === 0) {
+    ifBtnClick.classList.add("rightMoveCircle");
+    ifBtnClick.classList.remove("leftMoveCircle");
+
+    return btnOnOff++;
+  } else if (btnOnOff === 1) {
+    ifBtnClick.classList.toggle("rightMoveCircle");
+    ifBtnClick.classList.toggle("leftMoveCircle");
+
+    return --btnOnOff;
   }
 }
+
+//버튼을 눌렀을 때, 버튼 애니 따로, drawer 애니 따로 작동되게끔.

@@ -1,4 +1,4 @@
-const nowTime = document.querySelector(".clock__nowTime");
+const nowTime = document.querySelector(".nowTime");
 
 function getNowTime() {
     const date = new Date();

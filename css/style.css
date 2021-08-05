@@ -39,11 +39,11 @@ body {
   width: 90%;
   height: 20%;
 }
-.right-sideBar .switch {
+.right-sideBar .btn {
   width: 70px;
   height: 110px;
 
-  background-color: white;
+  /* background-color: white; */
   opacity: 0.6;
 
   display: flex;

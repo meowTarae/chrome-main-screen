@@ -1,0 +1,29 @@
+@keyframes rightMove {
+  0% {
+  }
+  80% {
+    transform: translateX(200px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(200px) rotate(180deg);
+  }
+}
+@keyframes leftMove {
+  0% {
+    transform: translateX(200px) rotate(180deg);
+  }
+  80% {
+    transform: translateX(0px) rotate(180deg);
+  }
+  100% {
+    transform: translateX(0px) rotate(360deg);
+  }
+}
+.rightMove {
+  animation: rightMove 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.leftMove {
+  animation: leftMove 1s ease-in-out;
+  animation-fill-mode: forwards;
+}

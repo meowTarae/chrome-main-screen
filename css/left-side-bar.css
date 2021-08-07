@@ -1,0 +1,15 @@
+.left-sideBar {
+  position: relative;
+  margin-right: 70px;
+  /* 위에거 안 벌려주면 오른쪽 버튼이 안눌령 */
+}
+.clock {
+  position: absolute;
+
+  color: whitesmoke;
+  font-family: "MonteCarlo", cursive;
+  font-size: 100px;
+
+  top: 8%;
+  left: -210%;
+}

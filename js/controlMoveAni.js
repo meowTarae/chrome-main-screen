@@ -11,13 +11,11 @@ function ifRightBtnClick() {
     rightBtn.classList.toggle("leftMoveCircle");
     rightDrwaer.classList.toggle("rightMoveDrawer");
     rightDrwaer.classList.toggle("leftMoveDrawer");
-    return count--;
   }  else if (rightBtn.classList.contains("rightMoveCircle") === false) {
     rightBtn.classList.add("rightMoveCircle");
     rightBtn.classList.remove("leftMoveCircle");
     rightDrwaer.classList.add("rightMoveDrawer");
     rightDrwaer.classList.remove("leftMoveDrawer");
-    return count++;
   } 
 } rightBtn.addEventListener("click", ifRightBtnClick);
 

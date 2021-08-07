@@ -5,7 +5,7 @@ function getNowTime() {
     const hours = String(date.getHours()).padStart(2, "0");
     const mins = String(date.getMinutes()).padStart(2, "0");
     const secs = String(date.getSeconds()).padStart(2, "0");
-    nowTime.innerText = `${hours}:${mins}:${secs}`;
+    nowTime.innerText = `${hours}: ${mins}: ${secs}`;
 }
 
 getNowTime();

@@ -1,6 +1,8 @@
 @import "reset.css";
 @import "moveAni.css";
 @import "right-side-bar.css";
+@import "left-side-bar.css";
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap");
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -14,6 +16,9 @@ body {
 
   display: flex;
   flex-direction: row-reverse;
+
+  overflow: hidden;
+  /* 버튼 눌렀을 때 삐져나옴 방지 */
 }
 .sideBar {
   width: 16%;

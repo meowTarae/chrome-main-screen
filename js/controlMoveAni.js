@@ -1,31 +1,23 @@
-const ifBtnClick = document.querySelector(".btn");
-let btnOnOff = 0;
+const rightBtn = document.querySelector(".right-sideBar .btn");
+const rightDrwaer = document.querySelector(".right-sideBar:not(.btn)");
+// const RMC = document.querySelector(".rightMoveCircle");
+// const LMC = document.querySelector(".leftMoveCircle");
+// const RMD = document.querySelector(".rightMoveDrawer");
+// const LMD = document.querySelector(".leftMoveDrawer");
 
-ifBtnClick.addEventListener("click", ifClick);
+function ifRightBtnClick() {  
+  if (rightBtn.classList.contains("rightMoveCircle") === true) {
+    rightBtn.classList.toggle("rightMoveCircle");
+    rightBtn.classList.toggle("leftMoveCircle");
+    rightDrwaer.classList.toggle("rightMoveDrawer");
+    rightDrwaer.classList.toggle("leftMoveDrawer");
+    return count--;
+  }  else if (rightBtn.classList.contains("rightMoveCircle") === false) {
+    rightBtn.classList.add("rightMoveCircle");
+    rightBtn.classList.remove("leftMoveCircle");
+    rightDrwaer.classList.add("rightMoveDrawer");
+    rightDrwaer.classList.remove("leftMoveDrawer");
+    return count++;
+  } 
+} rightBtn.addEventListener("click", ifRightBtnClick);
 
-function ifClick() {
-  if (btnOnOff === 0) {
-    ifBtnClick.classList.add("rightMoveCircle");
-    ifBtnClick.classList.remove("leftMoveCircle");
-
-    return btnOnOff++;
-  } else if (btnOnOff === 1) {
-    ifBtnClick.classList.toggle("rightMoveCircle");
-    ifBtnClick.classList.toggle("leftMoveCircle");
-
-    return --btnOnOff;
-  }
-}
-
-//버튼을 눌렀을 때, 버튼 애니 따로, drawer 애니 따로 작동되게끔.
-/*
-if (ifBtnClick.classList.contains('rightMoveCircle')) {
-  ifBtnClick.classList.toggle("rightMoveCircle");
-  ifBtnClick.classList.toggle("leftMoveCircle");
-} else {
-    ifBtnClick.classList.add("rightMoveCircle");
-    ifBtnClick.classList.remove("leftMoveCircle");
-}    이렇게하면 btnOnOff없어도 돌아가지않을까
-*/
-
-// 아니면? css의 애니메이션을 바로 js에서 실행할 순 없을까..?

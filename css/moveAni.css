@@ -1,4 +1,4 @@
-@keyframes rightMoveCircle {
+/* @keyframes leftMoveCircle {
   0% {
   }
   70% {
@@ -8,51 +8,64 @@
     transform: translateX(0px) rotate(180deg);
   }
 }
+ */
 @keyframes leftMoveCircle {
   0% {
-    transform: translateX(0px) rotate(180deg);
   }
   70% {
-    transform: translateX(0px) rotate(180deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: translateX(0px) rotate(360deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes rightMoveCircle {
+  0% {
+    transform: rotate(180deg);
+  }
+  70% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes leftMoveDrawer {
+  0% {
+  }
+  70% {
+    transform: translateX(-95%);
+  }
+  100% {
+    transform: translateX(-95%);
   }
 }
 @keyframes rightMoveDrawer {
   0% {
+    transform: translateX(-95%);
   }
   70% {
-    transform: translateX(95%);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(95%);
+    transform: translateX(0);
   }
 }
-@keyframes leftMoveDrawer {
-  0% {
-    transform: translateX(95%);
-  }
-  70% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
+
+.leftMoveCircle {
+  animation: leftMoveCircle 1s ease-in-out;
+  animation-fill-mode: forwards;
 }
 .rightMoveCircle {
   animation: rightMoveCircle 1s ease-in-out;
   animation-fill-mode: forwards;
 }
-.leftMoveCircle {
-  animation: leftMoveCircle 1s ease-in-out;
+.leftMoveDrawer {
+  animation: leftMoveDrawer 1s ease-in-out;
   animation-fill-mode: forwards;
 }
 .rightMoveDrawer {
   animation: rightMoveDrawer 1s ease-in-out;
-  animation-fill-mode: forwards;
-}
-.leftMoveDrawer {
-  animation: leftMoveDrawer 1s ease-in-out;
   animation-fill-mode: forwards;
 }

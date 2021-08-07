@@ -4,6 +4,9 @@
 @import "left-side-bar.css";
 @import url("https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap");
 
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -15,12 +18,10 @@ body {
   height: 98vh;
 
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  justify-content: space-between;
 
-  overflow: hidden;
-  /* 버튼 눌렀을 때 삐져나옴 방지 */
+  overflow: hidden; /* 버튼 눌렀을 때 삐져나옴 방지 */
 }
-.sideBar {
-  width: 16%;
-  height: inherit;
-}
+
+/* blanchedalmond << 이 색깔 마음에 드넹 */

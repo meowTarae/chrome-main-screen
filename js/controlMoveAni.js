@@ -1,21 +1,18 @@
-const rightBtn = document.querySelector(".right-sideBar .btn");
-const rightDrwaer = document.querySelector(".right-sideBar:not(.btn)");
-// const RMC = document.querySelector(".rightMoveCircle");
-// const LMC = document.querySelector(".leftMoveCircle");
-// const RMD = document.querySelector(".rightMoveDrawer");
-// const LMD = document.querySelector(".leftMoveDrawer");
+const leftBtn = document.querySelector(".left-sideBar .btn");
+const leftDrawer = document.querySelector(".left-sideBar:not(.btn)");
 
-function ifRightBtnClick() {  
-  if (rightBtn.classList.contains("rightMoveCircle") === true) {
-    rightBtn.classList.toggle("rightMoveCircle");
-    rightBtn.classList.toggle("leftMoveCircle");
-    rightDrwaer.classList.toggle("rightMoveDrawer");
-    rightDrwaer.classList.toggle("leftMoveDrawer");
-  }  else if (rightBtn.classList.contains("rightMoveCircle") === false) {
-    rightBtn.classList.add("rightMoveCircle");
-    rightBtn.classList.remove("leftMoveCircle");
-    rightDrwaer.classList.add("rightMoveDrawer");
-    rightDrwaer.classList.remove("leftMoveDrawer");
+
+function ifLeftBtnClick() {  
+  if (leftBtn.classList.contains("leftMoveCircle") === true) {
+    leftBtn.classList.toggle("leftMoveCircle");
+    leftBtn.classList.toggle("rightMoveCircle");
+    leftDrawer.classList.toggle("leftMoveDrawer");
+    leftDrawer.classList.toggle("rightMoveDrawer");
+  }  else if (leftBtn.classList.contains("leftMoveCircle") === false) {
+    leftBtn.classList.add("leftMoveCircle");
+    leftBtn.classList.remove("rightMoveCircle");
+    leftDrawer.classList.add("leftMoveDrawer");
+    leftDrawer.classList.remove("rightMoveDrawer");
   } 
-} rightBtn.addEventListener("click", ifRightBtnClick);
+} leftBtn.addEventListener("click", ifLeftBtnClick);
 

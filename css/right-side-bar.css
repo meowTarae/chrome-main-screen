@@ -1,34 +1,49 @@
 .right-sideBar {
-  background-color: white;
-  opacity: 0.6;
-  border-top-left-radius: 30px;
+  box-sizing: content-box;
+  width: 25%;
+  height: inherit;
+
+  margin-right: 6.5%; /* 오른쪽으로 얼마나 이동할지 */
+
+  position: relative;
+}
+
+.right-sideBar .clockBox {
+  font-family: "MonteCarlo", cursive;
+
+  color: #b9b5b3;
+  opacity: 0.8;
+
+  position: absolute;
+  top: 12%;
+
+  background-color: black;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.right-sideBar .clockBox .leftSide {
+  background-color: red;
+
+  width: 60%;
+  height: 100%;
+}
+.right-sideBar .clockBox .rightSide {
+  background-color: royalblue;
+  font-size: 40px;
+  width: 15%;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
-
-  position: relative;
 }
-.right-sideBar .boxs {
-  background-color: black;
-  opacity: 0.3;
-  border-radius: 30px;
-
-  width: 90%;
-  height: 20%;
+.right-sideBar .clockBox .rightSide .h4 {
+  padding: 50px 0;
 }
-.right-sideBar .btn {
-  width: 70px;
-  height: 110px;
-
-  opacity: 0.6;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  position: absolute;
-  left: 0%;
-  margin-left: -70px;
+.nowTime-HM {
+  font-size: 10px;
 }

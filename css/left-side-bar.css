@@ -1,15 +1,36 @@
 .left-sideBar {
+  width: 19%;
+  height: inherit;
+
+  background-color: white;
+  opacity: 0.4;
+  border-top-right-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
   position: relative;
-  margin-right: 70px;
-  /* 위에거 안 벌려주면 오른쪽 버튼이 안눌령 */
 }
-.clock {
+.left-sideBar .boxs {
+  background-color: black;
+  opacity: 0.3;
+  border-radius: 30px;
+
+  width: 90%;
+  height: 20%;
+}
+.left-sideBar .btn {
+  width: 70px;
+  height: 110px;
+  opacity: 0.6;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   position: absolute;
-
-  color: whitesmoke;
-  font-family: "MonteCarlo", cursive;
-  font-size: 100px;
-
-  top: 8%;
-  left: -210%;
+  right: -19%;
+  margin-left: -70px;
 }

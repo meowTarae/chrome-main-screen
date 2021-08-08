@@ -16,34 +16,29 @@
 
   position: absolute;
   top: 12%;
-
-  background-color: black;
+  left: 1%;
   width: 100%;
-
+  height: 16%;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 .right-sideBar .clockBox .leftSide {
-  background-color: red;
-
-  width: 60%;
   height: 100%;
+
+  font-size: 150px;
+  letter-spacing: 1px;
+  margin: 0 30px 20px 0;
 }
 .right-sideBar .clockBox .rightSide {
-  background-color: royalblue;
   font-size: 40px;
-  width: 15%;
   height: 100%;
 
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.right-sideBar .clockBox .rightSide .h4 {
-  padding: 50px 0;
-}
-.nowTime-HM {
-  font-size: 10px;
+.right-sideBar .clockBox .rightSide .nowTime-S {
+  font-size: 50px;
 }

@@ -1,0 +1,7 @@
+background-image: url(~~~);
+  background-repeat: repeat-x; /* x열로 계속 반복됨 */
+  -webkit-background-clip: text;
+  /* bgImage가 text 뒤로가는 기능! WATER뒤에 bgImage가 오게되는거임! 개쩐다! */
+  
+  
+  웹킷에 대해서 좀 더 알아보자!
